@@ -2,6 +2,7 @@ const search = document.getElementById('search'),
   submit = document.getElementById('submit'),
   random = document.getElementById('random'),
   home = document.getElementById('home'),
+  warningEl = document.getElementById('warning'),
   mealsEl = document.getElementById('meals'),
   resultHeading = document.getElementById('result-heading'),
   single_mealEl = document.getElementById('single-meal');
@@ -12,6 +13,9 @@ function searchMeal(e) {
 
   // Clear single meal
   single_mealEl.innerHTML = '';
+
+  // Clear warning
+  warningEl.innerText = '';
 
   // Get search term
   const term = search.value;
@@ -46,7 +50,7 @@ function searchMeal(e) {
     // Clear search text
     search.value = '';
   } else {
-    alert('Please enter a search term');
+    warningEl.innerText = 'Please enter a search term!';
   }
 }
 

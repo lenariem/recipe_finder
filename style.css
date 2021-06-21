@@ -61,6 +61,10 @@ input[type='text'] {
   border-bottom-right-radius: 4px;
 }
 
+.warning {
+  color: red;
+}
+
 .meals {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
