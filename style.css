@@ -54,7 +54,7 @@ input[type='text'] {
   border-bottom-right-radius: 4px;
 }
 
-.random-btn {
+.btn {
   cursor: pointer;
   margin-left: 10px;
   border-top-right-radius: 4px;
@@ -132,7 +132,7 @@ input[type='text'] {
 }
 
 .single-meal p {
-  margin: o;
+  margin: 0;
   letter-spacing: 0.5px;
   line-height: 1.5;
 }
@@ -148,7 +148,7 @@ input[type='text'] {
   background-color: #fff;
   display: inline-block;
   color: #2d2013;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bold;
   padding: 5px;
   margin: 0 5px 5px 0;

@@ -1,6 +1,7 @@
 const search = document.getElementById('search'),
   submit = document.getElementById('submit'),
   random = document.getElementById('random'),
+  home = document.getElementById('home'),
   mealsEl = document.getElementById('meals'),
   resultHeading = document.getElementById('result-heading'),
   single_mealEl = document.getElementById('single-meal');
@@ -112,6 +113,10 @@ function addMealToDOM(meal) {
 // Event listeners
 submit.addEventListener('submit', searchMeal);
 random.addEventListener('click', getRandomMeal);
+
+home.addEventListener('click', () => {
+  location.reload();
+});
 
 mealsEl.addEventListener('click', e => {
   //looking for elements with class 'meal-info'
