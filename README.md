@@ -1,6 +1,6 @@
 # Recipe Finder App
 
-### Search and generate random cooking idea from the [themealdb.com](www.themealdb.com) API
+### Search and generate a random cooking idea from the [themealdb.com](www.themealdb.com) API
 
 **to take a look please click this link:** 
 
