@@ -86,7 +86,7 @@ function addMealToDOM(meal) {
   const ingredients = [];
   console.log(meal);
 
-    for (let i = 1; i <= 20; i++) {
+  for (let i = 1; i <= 20; i++) {
     if (meal[`strIngredient${i}`]) {
       ingredients.push(
         `${meal[`strIngredient${i}`]} - ${meal[`strMeasure${i}`]}`

@@ -8,7 +8,7 @@ https://lenariem.github.io/recipe_finder/
 
 ### Technologies used: 
 * JavaScript
-* CSS, media queries
+* CSS, grid, media queries
 * HTML
 * fetch
 * responsive for different devices

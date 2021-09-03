@@ -117,10 +117,10 @@ input[type='text'] {
 
 .steps {
   text-align: justify;
-} 
+}
 
 .ingredients {
-  color: #e09850; 
+  color: #e09850;
 }
 
 .single-meal img {
@@ -162,10 +162,15 @@ input[type='text'] {
 }
 
 @media (max-width: 800px) {
+  .body { 
+    padding: 1%;
+  }
+  
   .meals {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
 @media (max-width: 700px) {
   .meals {
     grid-template-columns: repeat(2, 1fr);
@@ -176,6 +181,7 @@ input[type='text'] {
     width: 200px;
   }
 }
+
 @media (max-width: 500px) {
   input[type='text'] {
     width: 100%;
