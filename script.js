@@ -1,11 +1,11 @@
-const search = document.getElementById('search'),
-  submit = document.getElementById('submit'),
-  random = document.getElementById('random'),
-  home = document.getElementById('home'),
-  warningEl = document.getElementById('warning'),
-  mealsEl = document.getElementById('meals'),
-  resultHeading = document.getElementById('result-heading'),
-  single_mealEl = document.getElementById('single-meal');
+const search = document.getElementById('search');
+const submit = document.getElementById('submit');
+const random = document.getElementById('random');
+const home = document.getElementById('home');
+const warningEl = document.getElementById('warning');
+const mealsEl = document.getElementById('meals');
+const resultHeading = document.getElementById('result-heading');
+const single_mealEl = document.getElementById('single-meal');
 
 // Search meal and fetch from API
 function searchMeal(e) {

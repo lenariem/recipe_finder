@@ -1,11 +1,21 @@
-## Recipe Finder App
+# Recipe Finder App
 
-Search and generate random recipes from the [themealdb.com](www.themealdb.com) API
+### Search and generate random cooking idea from the [themealdb.com](www.themealdb.com) API
 
-## Project Specifications
+**to take a look please click this link:** 
 
-- Display UI with form to search and button to generate
+https://lenariem.github.io/recipe_finder/
+
+### Technologies used: 
+* JavaScript
+* CSS, media queries
+* HTML
+* fetch
+* responsive for different devices
+
+### User can
+- Search recipe
 - Connect to API and get meals
-- Display meals in DOM with image and hover effect
+- See meals with image and hover effect
 - Click on meal and see the details
 - Click on generate button and fetch & display a random meal
