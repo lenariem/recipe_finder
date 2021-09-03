@@ -80,12 +80,13 @@ function getRandomMeal() {
     });
 }
 
+
 // Add meal to DOM
 function addMealToDOM(meal) {
   const ingredients = [];
   console.log(meal);
 
-  for (let i = 1; i <= 20; i++) {
+    for (let i = 1; i <= 20; i++) {
     if (meal[`strIngredient${i}`]) {
       ingredients.push(
         `${meal[`strIngredient${i}`]} - ${meal[`strMeasure${i}`]}`
@@ -95,8 +96,7 @@ function addMealToDOM(meal) {
     }
   }
 
-const instr = meal.strInstructions.replace(/(\r\n|\r|\n)/g, '<br>');
-console.log(instr);
+  const instr = meal.strInstructions.replace(/(\r\n|\r|\n)/g, '<br>');
 
   single_mealEl.innerHTML = `
     <div class="single-meal">
@@ -105,7 +105,7 @@ console.log(instr);
       <div class="single-meal-info">
         ${meal.strCategory ? `<p>${meal.strCategory}</p>` : ''}
         ${meal.strArea ? `<p><i>${meal.strArea}</i></p>` : ''}
-      </div>
+      </div>      
       <div class="main">
         <p class="steps">${instr}</p>
         <h2 class="ingredients">Ingredients</h2>
