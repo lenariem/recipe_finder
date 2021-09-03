@@ -4,6 +4,7 @@
 
 body {
   background: #2d2013;
+ /*  background: url(./2.jpg) center center/contain repeat; */
   color: #fff;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 0;
@@ -93,17 +94,21 @@ input[type='text'] {
   left: 0;
   height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.7);
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 1.5%;
-  transition: opacity 0.2s ease-in;
-  opacity: 0;
+  transition: 0.5s ease-in;
+  background: rgba(255, 255, 255, 0.3);
+  color: #000;
+  text-shadow: 1px 1px 2px #fff;
 }
 
 .meal:hover .meal-info {
-  opacity: 1;
+  transform: scale(1.2);
+  color: #fff;
+  text-shadow: 1px 1px 2px #000;
+  background: none;
 }
 
 .single-meal {
@@ -113,8 +118,6 @@ input[type='text'] {
 
 .steps {
   text-align: justify;
-  text-indent: 4%;
-  padding: 1.2%;
 } 
 
 .ingredients {
@@ -129,10 +132,11 @@ input[type='text'] {
 }
 
 .single-meal-info {
-  margin: 20px;
+  margin: 20px 0;
   padding: 10px;
   border: 2px #e09850 dashed;
   border-radius: 5px;
+  font-size: 1.2em;
 }
 
 .single-meal p {

@@ -34,7 +34,7 @@ function searchMeal(e) {
           mealsEl.innerHTML = data.meals
             .map(
               meal => `
-              <a href="#recipe">
+              <a href="#single-meal">
                 <div class="meal">
                   <img src="${meal.strMealThumb}" alt="${meal.strMeal}" />
                   <div class="meal-info" data-mealID="${meal.idMeal}">
@@ -95,16 +95,19 @@ function addMealToDOM(meal) {
     }
   }
 
+const instr = meal.strInstructions.replace(/(\r\n|\r|\n)/g, '<br>');
+console.log(instr);
+
   single_mealEl.innerHTML = `
     <div class="single-meal">
-      <h1 id="recipe">${meal.strMeal}</h1>
+      <h1>${meal.strMeal}</h1>
       <img src="${meal.strMealThumb}" alt="${meal.strMeal}" />
       <div class="single-meal-info">
         ${meal.strCategory ? `<p>${meal.strCategory}</p>` : ''}
         ${meal.strArea ? `<p><i>${meal.strArea}</i></p>` : ''}
       </div>
       <div class="main">
-        <p class="steps">${meal.strInstructions}</p>
+        <p class="steps">${instr}</p>
         <h2 class="ingredients">Ingredients</h2>
         <ul>
           ${ingredients.map(ing => `<li>${ing}</li>`).join('')}
