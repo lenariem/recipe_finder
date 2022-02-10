@@ -196,3 +196,12 @@ input[type='text'] {
     width: 300px;
   }
 }
+
+@media (max-width: 410px) {
+
+  .meal img{
+    margin: 0;
+    height: 250px;
+    width: 250px;
+  }
+}
