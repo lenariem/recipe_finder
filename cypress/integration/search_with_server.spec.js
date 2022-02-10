@@ -48,6 +48,18 @@ describe('search function works correct with server', () => {
             .and('have.text', "There are no search results for 'chicken napolitano'. Try again!")
     })
 
+    it.only('search with error: empty search input', () => {
+        cy.get('input')
+            .clear()
+            .should('have.value', '')
+        
+        cy.get('.search-btn').click()
+        cy.get('#warning')
+            .should('be.visible')
+            .should('have.text', 'Please enter a search term!')
+            .and('have.css', 'color', 'rgb(255, 0, 0)')
+    })
+
     it('search with error: more than 50 chars', () => {
         cy.get('input')
             .type('ZioSPppSgEH1fYMLlELb0j45zLH0aH4Z5ri4eVTnpCSRUHZHcqb')
