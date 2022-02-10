@@ -10,6 +10,7 @@ https://lenariem.github.io/recipe_finder/
 * JavaScript
 * CSS, grid, media queries
 * HTML
+* Cypress
 * fetch
 * responsive for different devices
 
