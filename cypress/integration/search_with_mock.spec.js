@@ -36,7 +36,5 @@ describe('search function works correct with mock', () => {
             .and('have.text', "Search results for 'lamb':")
 
         cy.get('.meal').should('have.length', 17)
-
-        cy.get('.meal-info').should('not.exist')
     })
 })
